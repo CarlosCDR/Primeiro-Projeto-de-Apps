@@ -1,0 +1,40 @@
+package com.carlos.appcrudaluno;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class CadastrarAluno extends AppCompatActivity {
+
+    private BDSQLiteHelper bd;
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_cadastrar_aluno);
+        bd = new BDSQLiteHelper(this);
+
+        //final EditText matricula = (EditText) findViewById(R.id.edMatricula);
+        //final EditText nome = (EditText) findViewById(R.id.edNome);
+       // final Button adicionar = (Button) findViewById(R.id.btnCadastrar);
+        //adicionar.setOnClickListener(new View.OnClickListener() {
+           // @Override
+            //public void onClick(View view) {
+               // Aluno aluno = new Aluno();
+               // aluno.setMatricula(Integer.parseInt(matricula.getText().toString()));
+               // aluno.setNome(nome.getText().toString());
+              //  bd.addAluno(aluno);
+
+                //Toast.makeText(getBaseContext(), "Aluno Cadastrado Com Sucesso", Toast.LENGTH_SHORT).show();
+           // }
+       // });
+
+
+    }
+}
